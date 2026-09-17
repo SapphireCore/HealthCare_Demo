@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8f5">
+  <title>Healthcare Strategy Briefing Assistant</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Healthcare Strategy Briefing Assistant home">
+      <span class="brand-mark" aria-hidden="true">+</span>
+      <span>Health strategy <strong>briefing assistant</strong></span>
+    </a>
+    <span class="environment"><i></i> Demo workspace</span>
+  </header>
+
+  <main class="layout">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow">RESEARCH &amp; STRATEGY</div>
+      <h1 id="page-title">Explore a condition.<br><em>See what’s changing.</em></h1>
+      <p class="lead">Search established care pathways alongside emerging treatments, trial results, and the organizations behind them.</p>
+      <div class="notice"><span aria-hidden="true">ⓘ</span><span><strong>Research aid only.</strong> Sample procedures are illustrative and not clinically approved. This tool does not diagnose or recommend care.</span></div>
+    </section>
+
+    <section class="workspace" aria-label="Briefing search and results">
+      <form id="search-form" class="search-form">
+        <label for="query">What would you like to explore?</label>
+        <div class="search-row">
+          <input id="query" name="query" type="text" maxlength="2000" placeholder="Enter a condition, symptom, or treatment…" autocomplete="off" required>
+          <button id="submit-button" type="submit"><span>Search</span><span aria-hidden="true">→</span></button>
+        </div>
+        <div class="suggestion-heading">TRY A SEARCH</div>
+        <div class="suggestions">
+          <button type="button" class="suggestion" data-query="COPD treatment standards and emerging options for chronic bronchitis?">COPD &amp; chronic bronchitis</button>
+          <button type="button" class="suggestion" data-query="Breathlessness: show me the relevant standard procedure and emerging treatments.">Breathlessness</button>
+          <button type="button" class="suggestion" data-query="Parkinson's disease standard treatment and emerging therapies with institutions.">Parkinson’s disease</button>
+        </div>
+      </form>
+
+      <div id="conversation" class="conversation" aria-live="polite" aria-relevant="additions text"></div>
+      <div id="status" class="status" role="status" hidden></div>
+    </section>
+
+    <footer class="page-footer">
+      <span>Evidence-linked condition briefings</span>
+      <span>Sources and review dates shown with results</span>
+    </footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

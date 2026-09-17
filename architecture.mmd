@@ -1,0 +1,29 @@
+flowchart LR
+    U[User asks about a condition, symptom, or treatment] --> G{Intent and safety check}
+    G -->|Supported search| S[Resolve condition scope with terms and synonyms]
+    G -->|Urgent, personal, incomplete, or out of scope| H[Give a safe response or ask for more detail]
+    S --> D{Is the scope clear?}
+    D -->|No| C[Show possible scopes or ask a clarifying question]
+    C --> U
+    D -->|Yes| R[Retrieve matching records]
+
+    CM[(Condition names and synonyms)] -. supports .-> S
+    SP[(Structured standard procedure records)] --> R
+    ET[(Emerging treatment records and sources)] --> R
+    R --> V[Check relevance, source, study scope, and status]
+    V --> O[Assemble a consistent briefing]
+    O --> P[Standard care overview]
+    O --> E[Emerging treatment table, organizations, and sources]
+    P --> UO[Briefing shown to user]
+    E --> UO
+    UO --> F[Follow-up question about a treatment]
+    F --> TD[(Approved treatment detail, if available)]
+    F -->|If no approved detail| SUM[Return sourced catalog summary]
+    TD --> UO
+    SUM --> UO
+
+    GOV[Clinical and research owners review content and sources] -. maintain .-> SP
+    GOV -. maintain .-> ET
+
+    classDef safety fill:#fff4e5,stroke:#d0a658,color:#59441f;
+    class G,H,C safety;

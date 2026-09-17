@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Healthcare Strategy Briefing Assistant: query to briefing</title>
+  <desc id="desc">A slide-ready diagram showing query intake, safety and intent checks, condition scope resolution, retrieval from standard procedure and emerging treatment records, evidence validation, and a structured briefing with follow-up details.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L11,6 L1,11 z" fill="#668078"/></marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L11,6 L1,11 z" fill="#18715d"/></marker>
+    <style>
+      .bg{fill:#f5f8f5}.title{font:700 36px 'Arial',sans-serif;fill:#153b32}.subtitle{font:400 17px 'Arial',sans-serif;fill:#60746d}.step{font:700 12px 'Arial',sans-serif;letter-spacing:1.5px;fill:#43816b}.head{font:700 20px 'Arial',sans-serif;fill:#183d33}.body{font:400 14px 'Arial',sans-serif;fill:#52655e}.small{font:400 12px 'Arial',sans-serif;fill:#697a74}.card{fill:#fff;stroke:#d5e1d9;stroke-width:1.5;rx:16}.card-green{fill:#e9f4ee;stroke:#b9d6c7;stroke-width:1.5;rx:16}.card-warm{fill:#fff6e8;stroke:#ead7b7;stroke-width:1.5;rx:14}.connector{fill:none;stroke:#668078;stroke-width:2.5;marker-end:url(#arrow)}.connector-green{fill:none;stroke:#18715d;stroke-width:2.7;marker-end:url(#arrow-green)}.dash{fill:none;stroke:#96aaa0;stroke-width:2;stroke-dasharray:7 6;marker-end:url(#arrow)}.pill{fill:#f0f4f1;stroke:#d9e3dc;stroke-width:1}.pill-text{font:600 11px 'Arial',sans-serif;fill:#4d675d}.number{fill:#18715d}.number-text{font:700 13px 'Arial',sans-serif;fill:#fff;text-anchor:middle;dominant-baseline:middle}.store-title{font:700 17px 'Arial',sans-serif;fill:#24483d}.store-body{font:400 12px 'Arial',sans-serif;fill:#60726b}.foot{font:600 12px 'Arial',sans-serif;fill:#62756e}
+    </style>
+  </defs>
+  <rect class="bg" width="1600" height="900"/>
+  <text class="title" x="64" y="66">From question to strategy briefing</text>
+  <text class="subtitle" x="66" y="98">A guided search that connects established care with sourced treatment innovation</text>
+  <rect x="1265" y="45" width="270" height="34" rx="17" fill="#e7f1eb"/><text class="pill-text" x="1400" y="67" text-anchor="middle">HEALTH SYSTEM STRATEGY DEMO</text>
+
+  <!-- Main execution path -->
+  <g>
+    <rect class="card" x="45" y="166" width="195" height="166"/>
+    <circle class="number" cx="70" cy="192" r="14"/><text class="number-text" x="70" y="192">1</text>
+    <text class="step" x="93" y="196">USER INPUT</text>
+    <text class="head" x="66" y="235">Ask a question</text>
+    <text class="body" x="66" y="263"><tspan x="66">Condition, symptom,</tspan><tspan x="66" dy="20">or treatment name</tspan></text>
+    <rect class="pill" x="66" y="300" width="147" height="20" rx="10"/><text class="pill-text" x="139" y="314" text-anchor="middle">“Breathlessness”</text>
+
+    <path class="connector" d="M240 249 H278"/>
+    <rect class="card" x="282" y="166" width="205" height="166"/>
+    <circle class="number" cx="307" cy="192" r="14"/><text class="number-text" x="307" y="192">2</text>
+    <text class="step" x="330" y="196">INTENT &amp; SAFETY</text>
+    <text class="head" x="303" y="235">Check the request</text>
+    <text class="body" x="303" y="263"><tspan x="303">Identify supported searches</tspan><tspan x="303" dy="20">and requests needing care</tspan></text>
+    <text class="small" x="303" y="313">Urgent · personal · incomplete · out of scope</text>
+
+    <path class="connector" d="M487 249 H525"/>
+    <rect class="card" x="529" y="166" width="210" height="166"/>
+    <circle class="number" cx="554" cy="192" r="14"/><text class="number-text" x="554" y="192">3</text>
+    <text class="step" x="577" y="196">SCOPE RESOLUTION</text>
+    <text class="head" x="550" y="235">Find the condition</text>
+    <text class="body" x="550" y="263"><tspan x="550">Match terms and synonyms;</tspan><tspan x="550" dy="20">keep related conditions distinct</tspan></text>
+    <rect class="pill" x="550" y="300" width="166" height="20" rx="10"/><text class="pill-text" x="633" y="314" text-anchor="middle">Concept &amp; alias matching</text>
+
+    <path class="connector" d="M739 249 H776"/>
+    <polygon points="824,195 872,249 824,303 776,249" fill="#f0f5f1" stroke="#bfcfc5" stroke-width="1.5"/>
+    <text class="head" x="824" y="246" text-anchor="middle" font-size="15">Clear</text><text class="head" x="824" y="266" text-anchor="middle" font-size="15">scope?</text>
+    <path class="connector-green" d="M872 249 H907"/>
+    <text class="step" x="884" y="232">YES</text>
+
+    <rect class="card-green" x="911" y="166" width="205" height="166"/>
+    <circle class="number" cx="936" cy="192" r="14"/><text class="number-text" x="936" y="192">4</text>
+    <text class="step" x="959" y="196">RETRIEVE</text>
+    <text class="head" x="932" y="235">Get relevant records</text>
+    <text class="body" x="932" y="263"><tspan x="932">Fetch the matching care</tspan><tspan x="932" dy="20">pathway and treatment entries</tspan></text>
+    <text class="small" x="932" y="313">Records are selected by stable ID</text>
+
+    <path class="connector" d="M1116 249 H1154"/>
+    <rect class="card" x="1158" y="166" width="205" height="166"/>
+    <circle class="number" cx="1183" cy="192" r="14"/><text class="number-text" x="1183" y="192">5</text>
+    <text class="step" x="1206" y="196">EVIDENCE CHECK</text>
+    <text class="head" x="1179" y="235">Check the evidence</text>
+    <text class="body" x="1179" y="263"><tspan x="1179">Keep source, study scope,</tspan><tspan x="1179" dy="20">status, result, and date visible</tspan></text>
+    <text class="small" x="1179" y="313">Experimental ≠ established care</text>
+
+    <path class="connector-green" d="M1363 249 H1401"/>
+    <rect class="card-green" x="1405" y="166" width="155" height="166"/>
+    <circle class="number" cx="1430" cy="192" r="14"/><text class="number-text" x="1430" y="192">6</text>
+    <text class="step" x="1453" y="196">OUTPUT</text>
+    <text class="head" x="1426" y="235">Briefing</text>
+    <text class="body" x="1426" y="263"><tspan x="1426">Care overview</tspan><tspan x="1426" dy="20">+ emerging options</tspan><tspan x="1426" dy="20">+ organizations</tspan></text>
+    <text class="small" x="1426" y="323">Sources included</text>
+  </g>
+
+  <!-- Alternate outcomes -->
+  <path class="connector" d="M824 303 V374 H660 V398"/>
+  <text class="step" x="836" y="357">NO / UNCLEAR</text>
+  <rect class="card-warm" x="510" y="402" width="300" height="81"/>
+  <text class="head" x="530" y="433" font-size="16">Show choices or ask a question</text>
+  <text class="body" x="530" y="458">User selects a scope; the search continues</text>
+  <path class="connector" d="M510 443 H493 V350 H634 V336"/>
+  <rect class="card-warm" x="850" y="402" width="490" height="81"/>
+  <text class="head" x="872" y="433" font-size="16">If the request needs a different response</text>
+  <text class="body" x="872" y="458">Clarify incomplete input · route urgent/personal requests safely · explain unsupported searches</text>
+  <path class="dash" d="M384 332 V374 H1095 V398"/>
+
+  <!-- Retrieved information -->
+  <text class="step" x="64" y="551">RETRIEVED CONTENT</text>
+  <text class="small" x="64" y="574">Curated records with clear ownership and provenance</text>
+  <rect class="card" x="302" y="530" width="320" height="104"/>
+  <text class="store-title" x="325" y="562">Standard procedure library</text>
+  <text class="store-body" x="325" y="587"><tspan x="325">Fixed structured text · version · applicability</tspan><tspan x="325" dy="18">Guideline source · review date</tspan></text>
+  <rect class="card" x="666" y="530" width="350" height="104"/>
+  <text class="store-title" x="689" y="562">Emerging treatment catalog</text>
+  <text class="store-body" x="689" y="587"><tspan x="689">Treatment · studied condition · stage/status</tspan><tspan x="689" dy="18">Reported result · organization · source/date</tspan></text>
+  <rect class="card" x="1060" y="530" width="300" height="104"/>
+  <text class="store-title" x="1083" y="562">Condition concept map</text>
+  <text class="store-body" x="1083" y="587"><tspan x="1083">Names · synonyms · related terms</tspan><tspan x="1083" dy="18">Supports broad and varied wording</tspan></text>
+  <path class="dash" d="M460 530 V505 H1010 V338"/>
+  <path class="dash" d="M840 530 V500 H1018 V338"/>
+  <path class="dash" d="M1210 530 V492 H656 V338"/>
+
+  <!-- Follow-up turn -->
+  <rect x="64" y="690" width="1472" height="126" rx="18" fill="#eaf2ed" stroke="#cbdcd1" stroke-width="1.5"/>
+  <text class="step" x="91" y="720">FOLLOW-UP / MULTI-TURN QA</text>
+  <text class="head" x="91" y="757">“Tell me more about this treatment”</text>
+  <text class="body" x="91" y="783">The conversation keeps its context and selected scope</text>
+  <path class="connector-green" d="M460 755 H526"/>
+  <rect x="532" y="722" width="250" height="66" rx="12" fill="#fff" stroke="#cbdcd1" stroke-width="1.3"/>
+  <text class="head" x="657" y="750" text-anchor="middle" font-size="16">Look up treatment record</text>
+  <text class="small" x="657" y="772" text-anchor="middle">Use stable treatment ID</text>
+  <path class="connector-green" d="M782 755 H845"/>
+  <rect x="851" y="722" width="310" height="66" rx="12" fill="#fff" stroke="#cbdcd1" stroke-width="1.3"/>
+  <text class="head" x="1006" y="750" text-anchor="middle" font-size="16">Return sourced detail</text>
+  <text class="small" x="1006" y="772" text-anchor="middle">Approved text if available; otherwise summary</text>
+  <path class="connector-green" d="M1161 755 H1222"/>
+  <rect x="1228" y="722" width="278" height="66" rx="12" fill="#fff" stroke="#cbdcd1" stroke-width="1.3"/>
+  <text class="head" x="1367" y="750" text-anchor="middle" font-size="16">Keep evidence in view</text>
+  <text class="small" x="1367" y="772" text-anchor="middle">No invented claims or recommendations</text>
+
+  <text class="foot" x="64" y="858">Content governance: clinical and research owners review records, sources, applicability, and update dates.</text>
+  <text class="foot" x="1536" y="858" text-anchor="end">Illustrative demo · not for clinical decision-making</text>
+</svg>
